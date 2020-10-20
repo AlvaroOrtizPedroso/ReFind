@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ReFind</string>
+    <string name="editTextEmailRegistro">ReFind</string>
+
 </resources>

@@ -6,44 +6,85 @@
     android:layout_height="match_parent"
     tools:context=".Registro">
 
-    <LinearLayout
-        android:layout_width="353dp"
-        android:layout_height="326dp"
-        android:orientation="vertical"
+    <ImageView
+        android:id="@+id/logoRefind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="127dp">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="352dp"
+        android:layout_height="309dp"
+        android:layout_marginBottom="132dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/editTextEmailRegistro"
+            android:id="@+id/emailRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/emailRegistro"
             android:inputType="textEmailAddress" />
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/nombreRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/nombreRegistro"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/apellidoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/apellidoRegistro"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/passRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/passRegistro"
             android:inputType="textPassword" />
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:orientation="vertical"></LinearLayout>
 
-    <LinearLayout
-        android:layout_width="256dp"
-        android:layout_height="191dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="487dp">
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
 
-        <RadioGroup
-            android:layout_width="120dp"
-            android:layout_height="141dp" />
+            <Button
+                android:id="@+id/iniciarSesionRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Button" />
 
-        <RadioGroup
-            android:layout_width="115dp"
-            android:layout_height="140dp" />
+            <Button
+                android:id="@+id/registrarRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Button" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">ReFind</string>
+
     <string name="emailRegistro">Correo electronico </string>
     <string name="nombreRegistro">Nombre</string>
     <string name="apellidoRegistro">Apellido</string>
     <string name="passRegistro">Contraseña</string>
+    <string name="iniciarSesionRegistro">Iniciar Sesion</string>
+    <string name="registrarRegistro">Registrarse</string>
 
 
-    nombreRegistro
+
 </resources>

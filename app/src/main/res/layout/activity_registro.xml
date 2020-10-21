@@ -67,21 +67,21 @@
             android:orientation="vertical"></LinearLayout>
 
         <LinearLayout
-            android:layout_width="192dp"
+            android:layout_width="295dp"
             android:layout_height="50dp"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/iniciarSesionRegistro"
-                android:layout_width="wrap_content"
+                android:layout_width="147dp"
                 android:layout_height="match_parent"
-                android:text="Button" />
+                android:text="@string/iniciarSesionRegistro" />
 
             <Button
                 android:id="@+id/registrarRegistro"
-                android:layout_width="wrap_content"
+                android:layout_width="132dp"
                 android:layout_height="match_parent"
-                android:text="Button" />
+                android:text="@string/registrarRegistro" />
 
         </LinearLayout>
 

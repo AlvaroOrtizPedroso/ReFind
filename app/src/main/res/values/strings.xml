@@ -8,5 +8,7 @@
     <string name="iniciarSesionRegistro">Iniciar Sesion</string>
     <string name="registrarRegistro">Registrarse</string>
 
+    <string name="descripcionLogo">Logo de ReFind</string>
+
 
 </resources>

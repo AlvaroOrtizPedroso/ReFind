@@ -1,7 +1,6 @@
 package com.example.refind;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 
 public class Perfil extends AppCompatActivity {

@@ -10,5 +10,9 @@
 
     <string name="descripcionLogo">Logo de ReFind</string>
 
+    <string name="menuPrincipal">Principal</string>
+    <string name="menuRegistro">Registro</string>
+    <string name="menuIniciarSesion">Iniciar Sesion</string>
+
 
 </resources>

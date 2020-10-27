@@ -9,15 +9,16 @@
 
     <ImageView
         android:id="@+id/logoRefind"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="216dp"
+        android:layout_height="179dp"
         android:contentDescription="@string/descripcionLogo"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.582" />
+        app:layout_constraintVertical_bias="0.582"
+        app:srcCompat="@drawable/logo_android" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

@@ -13,13 +13,20 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Perfil extends AppCompatActivity {
 
-    ImageButton fotoUsuario;
+
+
+    // Metodos y variables para dar permisos y acceder a la galeria
+    ImageView fotoUsuario;
+    Button cambiarFoto;
 
     private static final int REQUEST_PERMISSION_CODE = 100;
     private static final int REQUEST_IMAGE_GALLERY = 101;
@@ -30,8 +37,9 @@ public class Perfil extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
 
         fotoUsuario = findViewById(R.id.fotoUsuario);
+        cambiarFoto = findViewById(R.id.cambiarFoto);
 
-        fotoUsuario.setOnClickListener(new View.OnClickListener(){
+        cambiarFoto.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
                 if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
@@ -46,6 +54,47 @@ public class Perfil extends AppCompatActivity {
             }
         });
     }
+
+    // METODOS PARA EL MENU DESPLEGABLE
+
+    /**
+     * Metoto para mostrar u ocultar el menu
+     * Debemos crear un metodo con este nombre exactamente al cual le pasamos un parametro de tipo MenuItem
+     * @param menu
+     * @return
+     */
+    public boolean onCreateOptionsMenu(Menu menu){
+        //Carpeta res - menu - overflow y pasamos el objeto menu
+        getMenuInflater().inflate(R.menu.overflow, menu);
+        return true;
+    }
+
+    /**
+     * Metodo para indicar a cual en cual de las opciones se hizo clic
+     * Debemos crear un metodo con este nombre exactamente al cual le pasamos un parametro de tipo MenuItem
+     * @param item
+     * @return
+     */
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id= item.getItemId();
+
+        // Id de cada opcion del menu
+        if(id == R.id.menuPrincipal){
+            Toast.makeText(this, "Menu Principal", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.menuRegistro){
+            Toast.makeText(this, "Registro", Toast.LENGTH_SHORT).show();
+        }else if(id == R.id.menuIniciarSesion){
+            Toast.makeText(this, "Iniciar Sesion", Toast.LENGTH_SHORT).show();
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+
+
+
+
+
 
     // METODOS PARA OBTENER LOS PERMISOS Y ADQUIRIR UNA FOTO DE LA GALERIA
     @Override

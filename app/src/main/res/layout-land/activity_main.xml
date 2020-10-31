@@ -8,11 +8,13 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="393dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="56dp"
+        android:layout_width="555dp"
+        android:layout_height="197dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -20,13 +22,14 @@
             android:id="@+id/fotoPrueba"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
             android:layout_weight="1"
             android:contentDescription="@string/fotoPrueba"
             tools:srcCompat="@tools:sample/avatars" />
 
         <Space
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="181dp"
             android:layout_weight="1" />
 
         <LinearLayout

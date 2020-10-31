@@ -13,6 +13,15 @@
     <string name="menuPrincipal">Principal</string>
     <string name="menuRegistro">Registro</string>
     <string name="menuIniciarSesion">Iniciar Sesion</string>
+    <string name="nombreUsuario">El nombre de usuario es:</string>
+    <string name="cambiarFoto">Cambiar Foto</string>
+    <string name="fotoUsuario">Foto del usuario</string>
+    <string name="bibliografia">Bibliografia</string>
+
+    <string name="fotoPrueba">fotoPrueba</string>
+    <string name="tituloPrueba">titulo Prueba</string>
+    <string name="descripcionPrueba">descripcion Prueba</string>
+
 
 
 </resources>

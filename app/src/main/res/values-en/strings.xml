@@ -25,4 +25,14 @@
     <string name="tituloPrueba">Titel Proof</string>
     <string name="descripcionPrueba">Description Proof</string>
 
+    <string name="lista">List</string>
+    <string name="icoImageView">Image icon</string>
+    <string name="TituloEjemplo">Title Example</string>
+    <string name="descripcionEjemplo">Descripcion Example</string>
+    <string name="statusTextView">Active</string>
+
+    <!-- Menu contextual -->
+    <string name="action_copiar">Copy bibliography</string>
+    <string name="action_editar">Edit bibliography</string>
+    <string name="action_defecto">Default bibliography</string>
 </resources>

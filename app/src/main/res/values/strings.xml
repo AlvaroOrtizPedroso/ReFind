@@ -21,6 +21,11 @@
     <string name="fotoPrueba">fotoPrueba</string>
     <string name="tituloPrueba">titulo Prueba</string>
     <string name="descripcionPrueba">descripcion Prueba</string>
+    <string name="lista">Lista</string>
+    <string name="icoImageView">Icono de imagen</string>
+    <string name="TituloEjemplo">Titulo Ejemplo</string>
+    <string name="descripcionEjemplo">Descripcion Ejemplo</string>
+    <string name="statusTextView">Activo</string>
 
     <!-- Menu contextual -->
     <string name="action_copiar">Copiar bibliografia</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:androud="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     androud:id="@+id/cv"
     androud:layout_width="match_parent"
     androud:layout_height="wrap_content"
@@ -18,6 +19,7 @@
             androud:layout_height="wrap_content"
             androud:orientation="horizontal"
             androud:padding="6dp">
+
             <ImageView
                 androud:id="@+id/icoImageView"
                 androud:layout_width="70dp"
@@ -25,10 +27,10 @@
                 androud:layout_alignParentStart="true"
                 androud:layout_centerVertical="true"
                 androud:layout_gravity="center"
+                androud:contentDescription="@string/icoImageView"
                 androud:paddingLeft="14dp"
                 androud:paddingRight="14dp"
-                app:srcCompat="@drawable/ic_ico_categoria"
-                androud:layout_alignParentLeft="true"/>
+                app:srcCompat="@drawable/ic_ico_categoria" />
 
             <LinearLayout
                 androud:id="@+id/linearLayout"
@@ -36,10 +38,8 @@
                 androud:layout_height="wrap_content"
                 androud:layout_alignParentTop="true"
                 androud:layout_marginStart="4dp"
-                androud:layout_marginLeft="4dp"
                 androud:layout_marginTop="2dp"
                 androud:layout_toEndOf="@+id/icoImageView"
-                androud:layout_toRightOf="@+id/icoImageView"
                 androud:orientation="vertical">
 
                 <TextView
@@ -47,7 +47,7 @@
                     androud:layout_width="match_parent"
                     androud:layout_height="wrap_content"
                     androud:layout_marginBottom="2dp"
-                    androud:text="TituloEjemplo"
+                    androud:text="@string/TituloEjemplo"
                     androud:textColor="@android:color/black"
                     androud:textSize="24sp"
                     androud:textStyle="bold" />
@@ -56,7 +56,7 @@
                     androud:id="@+id/cityTextView"
                     androud:layout_width="match_parent"
                     androud:layout_height="wrap_content"
-                    androud:text="Descripcion Ejemplo"
+                    androud:text="@string/descripcionEjemplo"
                     androud:textSize="18sp" />
             </LinearLayout>
 
@@ -64,14 +64,12 @@
                 androud:id="@+id/statusTextView"
                 androud:layout_width="wrap_content"
                 androud:layout_height="wrap_content"
+                androud:layout_alignParentEnd="true"
                 androud:layout_centerVertical="true"
                 androud:layout_marginEnd="36dp"
-                androud:layout_marginRight="36dp"
-                androud:text="Activo"
+                androud:text="@string/statusTextView"
                 androud:textSize="20sp"
-                androud:textStyle="bold"
-                androud:layout_alignParentRight="true"
-                androud:layout_alignParentEnd="true" />
+                androud:textStyle="bold" />
         </RelativeLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

@@ -7,54 +7,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="393dp"
-        android:layout_height="128dp"
-        android:layout_marginTop="56dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="98dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="Lista"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/fotoPrueba"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="@string/fotoPrueba"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <Space
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <LinearLayout
-            android:layout_width="306dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="26dp" />
-
-            <TextView
-                android:id="@+id/tituloPrueba"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/tituloPrueba" />
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="18dp" />
-
-            <TextView
-                android:id="@+id/descripcionPrueba"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/descripcionPrueba" />
-        </LinearLayout>
-
-    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

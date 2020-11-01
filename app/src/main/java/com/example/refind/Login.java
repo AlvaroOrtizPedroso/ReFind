@@ -11,6 +11,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        Toast.makeText(this, "Aplicacion iniciada: Login", Toast.LENGTH_LONG).show();
     }
 }
 

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "asdasd", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Aplicacion iniciada: Main", Toast.LENGTH_LONG).show();
         init();
     }
 

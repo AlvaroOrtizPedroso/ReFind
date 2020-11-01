@@ -22,6 +22,9 @@
     <string name="tituloPrueba">titulo Prueba</string>
     <string name="descripcionPrueba">descripcion Prueba</string>
 
-
+    <!-- Menu contextual -->
+    <string name="action_copiar">Copiar bibliografia</string>
+    <string name="action_editar">Editar bibliografia</string>
+    <string name="action_defecto">Bibliografia por defecto</string>
 
 </resources>

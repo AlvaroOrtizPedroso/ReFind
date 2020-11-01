@@ -13,15 +13,19 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Perfil extends AppCompatActivity {
 
+    //Menu Contextual
+    private TextView bibliografia;
 
 
     // Metodos y variables para dar permisos y acceder a la galeria
@@ -53,17 +57,43 @@ public class Perfil extends AppCompatActivity {
                 }
             }
         });
+        //Menu Contextual
+        bibliografia = (TextView)findViewById(R.id.bibliografia);
+        registerForContextMenu(bibliografia);// Registar un toque largo
     }
 
-    // METODOS PARA EL MENU DESPLEGABLE
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        super.onCreateContextMenu(menu, v, menuInfo);
+        //getMenuInflater().inflate(R.menu.overflow, menu);
+        getMenuInflater().inflate(R.menu.menu_contextual_perfil, menu);
 
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.copiar:
+                Toast.makeText(this, "Copiado", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.editar:
+                Toast.makeText(this, "Editar", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.defecto:
+                Toast.makeText(this, "Defecto", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
+    }
+    // METODOS PARA EL MENU DESPLEGABLE
     /**
      * Metoto para mostrar u ocultar el menu
      * Debemos crear un metodo con este nombre exactamente al cual le pasamos un parametro de tipo MenuItem
      * @param menu
      * @return
      */
-    public boolean onCreateOptionsMenu(Menu menu){
+   /** public boolean onCreateOptionsMenu(Menu menu){
         //Carpeta res - menu - overflow y pasamos el objeto menu
         getMenuInflater().inflate(R.menu.overflow, menu);
         return true;
@@ -75,7 +105,7 @@ public class Perfil extends AppCompatActivity {
      * @param item
      * @return
      */
-    public boolean onOptionsItemSelected(MenuItem item){
+    /**public boolean onOptionsItemSelected(MenuItem item){
         int id= item.getItemId();
 
         // Id de cada opcion del menu
@@ -88,7 +118,7 @@ public class Perfil extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
 
 

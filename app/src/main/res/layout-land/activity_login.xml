@@ -23,7 +23,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/emailRegistro"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/passLogin"

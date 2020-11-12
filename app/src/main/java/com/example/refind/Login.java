@@ -12,6 +12,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Toast.makeText(this, "Aplicacion iniciada: Login", Toast.LENGTH_LONG).show();
+        this.setTitle("Iniciar sesión");
     }
 }
 

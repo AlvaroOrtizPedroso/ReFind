@@ -43,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
+            android:onClick="iniciarSesion"
             android:text="@string/iniciarSesionRegistro" />
 
         <LinearLayout
@@ -61,10 +62,10 @@
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/menuRegistro"
+                android:onClick="toRegistro"
 
 
-                />
+                android:text="@string/menuRegistro" />
         </LinearLayout>
 
     </LinearLayout>

@@ -88,6 +88,7 @@
                 android:layout_width="147dp"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="20dp"
+                android:onClick="iniciarSesion"
                 android:text="@string/iniciarSesionRegistro" />
 
             <Button
@@ -95,6 +96,7 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="132dp"
                 android:layout_height="match_parent"
+                android:onClick="registrar"
                 android:text="@string/registrarRegistro" />
 
         </LinearLayout>

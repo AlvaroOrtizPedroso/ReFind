@@ -8,10 +8,17 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 public class Login extends AppCompatActivity {
 
     //Creamos los dos objetos de tipo EditText para el correo y la contraseña
     private EditText correo, password;
+    private static Connection conn;//Añadida
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +54,32 @@ public class Login extends AppCompatActivity {
     public void toRegistro(View view){
             Intent login_registro = new Intent(this, Registro.class);
             startActivity(login_registro);
+    }
+
+    //Seguir por aqui
+
+    /**
+     * Ideas
+     *      Obtener el id del usuario y comprobarlo con un toast para ver si funciona
+     *      Crear un objeto usuario el cual tenga datos que podamos ver y tocar
+     *      Obtener el id del usuario y mientras se inicia cargar los datos de ese usuario 
+     * @return
+     */
+    public int compExistenciaUsuario(){
+        try {
+            if(conn==null || conn.isClosed()){
+                conn=ConectorMySql.establecerConexion();
+            }
+            PreparedStatement pstmt = null;
+            pstmt=conn.prepareStatement("SELECT * from usuario where ");
+            ResultSet prs=pstmt.executeQuery();
+            while(prs.next()){
+
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return 0;
     }
 }
 

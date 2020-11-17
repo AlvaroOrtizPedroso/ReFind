@@ -38,13 +38,43 @@ public class Login extends AppCompatActivity {
      * @param view
      */
     public void iniciarSesion(View view){
-        if(true){
+
+        //Variables
+
+        try {
+            if (conn == null || conn.isClosed()) {
+                conn = ConectorMySql.establecerConexion();
+            }
+            try{
+                PreparedStatement pstmt = null;
+                pstmt = conn.prepareStatement("SELECT * FROM usuario where usuario='"+correo.getText().toString()+"'");
+                ResultSet prs = pstmt.executeQuery();
+                while (prs.next()) {
+                    int id = prs.getInt("usuario_id");
+                    String nombre = prs.getNString("nombre");
+                    Toast.makeText(this, "OK1", Toast.LENGTH_SHORT).show();
+                }
+
+            }catch (SQLException e){
+                System.out.println("Se ha producido una SQLException:" + e.getMessage());
+            }
+            finally {
+                if (conn != null) {
+                    ConectorMySql.cerrarConexion();
+                }
+            }
+            Toast.makeText(this, "OK", Toast.LENGTH_LONG).show();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        /**if(false){
             Intent login_MainActivity = new Intent(this, MainActivity.class);
             startActivity(login_MainActivity);
         }
         else{
             Toast.makeText(this, "Datos introducidos erroneos", Toast.LENGTH_LONG).show();
-        }
+        }*/
     }
 
     /**

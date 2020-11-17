@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class ConectorMySql {
-    static final String DB_URL="jdbc:mysql://localhost/pruebarefind";
+    static final String DB_URL="jdbc:mysql://localhost:3306/refindprueba";
     static final String USER = "root";
     static final String PASS = "";
 

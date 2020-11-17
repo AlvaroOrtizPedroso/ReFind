@@ -31,5 +31,7 @@
     <string name="action_copiar">Copiar bibliografia</string>
     <string name="action_editar">Editar bibliografia</string>
     <string name="action_defecto">Bibliografia por defecto</string>
+    <string name="title_activity_perfin_anunciante">Map</string>
+    <string name="nombre_anuncio">IES ATAULFO ARGENTA</string>
 
 </resources>

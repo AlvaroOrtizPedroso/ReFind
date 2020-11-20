@@ -9,6 +9,6 @@
         android:id="@+id/menuRegistro"
         android:title="@string/menuRegistro" />
     <item
-        android:id="@+id/menuIniciarSesion"
-        android:title="@string/menuIniciarSesion" />
+        android:id="@+id/menuPerfil"
+        android:title="@string/menuPerfil" />
 </menu>

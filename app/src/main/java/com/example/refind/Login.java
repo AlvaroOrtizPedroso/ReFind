@@ -39,8 +39,8 @@ public class Login extends AppCompatActivity {
      */
     public void iniciarSesion(View view){
 
-        //Variables
-
+        //Zona conexion a BD
+        /**
         try {
             if (conn == null || conn.isClosed()) {
                 conn = ConectorMySql.establecerConexion();
@@ -66,15 +66,15 @@ public class Login extends AppCompatActivity {
             Toast.makeText(this, "OK", Toast.LENGTH_LONG).show();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-        }
+        }*/
 
-        /**if(false){
+        if(true){
             Intent login_MainActivity = new Intent(this, MainActivity.class);
             startActivity(login_MainActivity);
         }
         else{
             Toast.makeText(this, "Datos introducidos erroneos", Toast.LENGTH_LONG).show();
-        }*/
+        }
     }
 
     /**

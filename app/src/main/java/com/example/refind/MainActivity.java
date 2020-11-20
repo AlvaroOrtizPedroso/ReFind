@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -49,11 +50,14 @@ public class MainActivity extends AppCompatActivity {
 
         // Id de cada opcion del menu
         if(id == R.id.menuPrincipal){
-            Toast.makeText(this, "Menu Principal", Toast.LENGTH_SHORT).show();
+            Intent main_C_Menu = new Intent(this, MainActivity.class);
+            startActivity(main_C_Menu);
         }else if(id == R.id.menuRegistro){
-            Toast.makeText(this, "Registro", Toast.LENGTH_SHORT).show();
-        }else if(id == R.id.menuIniciarSesion){
-            Toast.makeText(this, "Iniciar Sesion", Toast.LENGTH_SHORT).show();
+            Intent main_C_Menu = new Intent(this, Registro.class);
+            startActivity(main_C_Menu);
+        }else if(id == R.id.menuPerfil){
+            Intent main_C_Menu = new Intent(this, Perfil.class);
+            startActivity(main_C_Menu);
         }
 
         return super.onOptionsItemSelected(item);

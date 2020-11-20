@@ -12,10 +12,10 @@
 
     <string name="menuPrincipal">Principal</string>
     <string name="menuRegistro">Registro</string>
-    <string name="menuIniciarSesion">Iniciar Sesion</string>
-    <string name="nombreUsuario">El nombre de usuario es:</string>
-    <string name="cambiarFoto">Cambiar Foto</string>
-    <string name="fotoUsuario">Foto del usuario</string>
+    <string name="menuPerfil">Tu perfil</string>
+
+
+
     <string name="bibliografia">Bibliografia</string>
 
     <string name="fotoPrueba">fotoPrueba</string>
@@ -34,4 +34,19 @@
     <string name="title_activity_perfin_anunciante">Map</string>
     <string name="nombre_anuncio">IES ATAULFO ARGENTA</string>
     <string name="descripcion_anuncio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis sagittis nibh. Ut euismod, dolor et bibendum tincidunt, orci justo efficitur dolor, non rhoncus nibh massa vitae lectus</string>
+
+    <!-- Strings de: Activity : PERFIL -->
+    <string name="nombreUsuario">Ej_Alvaro</string>
+    <string name="desFotoUsuario">Foto del usuario</string>
+    <string name="editarPerfil">Editar perfil</string>
+    <string name="tvSeguidores">Seguidores</string>
+    <string name="tvSiguiendo">Siguiendo</string>
+    <string name="tvComentario">Comentarios</string>
+    <string name="tvNSeguidores">0</string>
+    <string name="tvNSiguiendo">0</string>
+    <string name="tvNComentario">0</string>
+    <string name="tvLinea">----------------------------------------------------------------------</string>
+
+    <!-- Strings de: Activity : REGISTRO -->
+    <string name="logo_Registro">Logo de Refind</string>
 </resources>

@@ -13,12 +13,12 @@
 
     <string name="menuPrincipal">Index</string>
     <string name="menuRegistro">Registry</string>
-    <string name="menuIniciarSesion">Login in</string>
+    <string name="menuPerfil">Login in</string>
 
 
     <string name="nombreUsuario">User name is</string>
     <string name="cambiarFoto">Change photo</string>
-    <string name="fotoUsuario">User´s photo</string>
+    <string name="desFotoUsuario">User´s photo</string>
     <string name="bibliografia">Bibliography</string>
 
     <string name="fotoPrueba">Photo Proof</string>

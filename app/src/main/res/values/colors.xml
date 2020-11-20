@@ -3,4 +3,21 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="botonBPerfil">#FFFFFF</color>
+    <color name="textoBoton">#2d4619</color>
+    <color name="textoContri_Segui_Sigui">#474B4E</color>
+
+    <!--
+    Escala verde a blanco
+     $color1: #aead3e;
+    $color2: #c2c04f;
+    $color3: #ccca69;
+    $color4: #d6d484;
+    $color5: #bfbfbf;
+    $color6: #d1d1d1;
+    $color7: #e3e3e3;
+
+    -->
+    <color name="colorPrueba1">#EBE4C2</color>
+    <color name="colorPrueba2">#4E3399</color>
 </resources>

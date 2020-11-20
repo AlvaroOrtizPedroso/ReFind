@@ -14,7 +14,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.ContextMenu;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -41,7 +40,7 @@ public class Perfil extends AppCompatActivity {
         setContentView(R.layout.activity_perfil);
         Toast.makeText(this, "Aplicacion iniciada: Perfil", Toast.LENGTH_LONG).show();
         fotoUsuario = findViewById(R.id.fotoUsuario);
-        cambiarFoto = findViewById(R.id.cambiarFoto);
+        cambiarFoto = findViewById(R.id.editarPerfil);
 
         cambiarFoto.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -58,8 +57,9 @@ public class Perfil extends AppCompatActivity {
             }
         });
         //Menu Contextual
-        bibliografia = (TextView)findViewById(R.id.bibliografia);
-        registerForContextMenu(bibliografia);// Registar un toque largo
+        //TODO: En un futuro colocar un toque largo (Idea en las imagenes de el grid)
+        //bibliografia = (TextView)findViewById(R.id.bibliografia);
+        //registerForContextMenu(bibliografia);// Registar un toque largo
     }
 
     @Override

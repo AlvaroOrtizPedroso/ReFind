@@ -17,6 +17,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Imagen_Grid_Full"></activity>
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,9 +40,7 @@
         <activity
             android:name=".perfinAnunciante"
             android:label="@string/title_activity_perfin_anunciante" />
-        <activity android:name=".Perfil">
-
-        </activity>
+        <activity android:name=".Perfil"></activity>
         <activity android:name=".Login" />
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity" />

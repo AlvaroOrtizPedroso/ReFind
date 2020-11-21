@@ -27,9 +27,16 @@ public class Login extends AppCompatActivity {
         Toast.makeText(this, "Aplicacion iniciada: Login", Toast.LENGTH_LONG).show();
         this.setTitle("Iniciar sesión");
 
+        //Ocultar el actionBar
+        getSupportActionBar().hide();
+
+
+        /**             ZONA DE VINCULACION         */
+
         //Relacionamos los dos obtejos EditText con el id correspondiente
         correo = (EditText)findViewById(R.id.emailLogin);
         password = (EditText)findViewById(R.id.passLogin);
+
     }
 
     /**
@@ -68,12 +75,18 @@ public class Login extends AppCompatActivity {
             throwables.printStackTrace();
         }*/
 
-        if(true){
+
+        String usuarioNombre =correo.getText().toString();
+        String usuarioContra =password.getText().toString();
+
+        String nombrePrueba="Alvaro";
+        String contraPrueba="kk";
+        if(usuarioNombre.equals(nombrePrueba) && usuarioContra.equals(contraPrueba)){
             Intent login_MainActivity = new Intent(this, MainActivity.class);
             startActivity(login_MainActivity);
         }
         else{
-            Toast.makeText(this, "Datos introducidos erroneos", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Datos introducidos erroneos. prueba Alvaro kk", Toast.LENGTH_LONG).show();
         }
     }
 

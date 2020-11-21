@@ -15,7 +15,6 @@
     <string name="menuPerfil">Tu perfil</string>
 
 
-
     <string name="bibliografia">Bibliografia</string>
 
     <string name="fotoPrueba">fotoPrueba</string>
@@ -45,7 +44,7 @@
     <string name="tvNSeguidores">0</string>
     <string name="tvNSiguiendo">0</string>
     <string name="tvNComentario">0</string>
-    <string name="tvLinea">----------------------------------------------------------------------</string>
+    <string name="tvLinea">Bibliografia de ejemplo, no se que poner</string>
 
     <!-- Strings de: Activity : REGISTRO -->
     <string name="logo_Registro">Logo de Refind</string>

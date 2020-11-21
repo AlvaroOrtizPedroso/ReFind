@@ -16,7 +16,9 @@ import android.util.Log;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,7 +27,8 @@ public class Perfil extends AppCompatActivity {
 
     //Menu Contextual
     private TextView bibliografia;
-
+    //GridView
+    GridView gridView;
 
     // Metodos y variables para dar permisos y acceder a la galeria
     ImageView fotoUsuario;
@@ -38,13 +41,18 @@ public class Perfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
+
+
+
+
         Toast.makeText(this, "Aplicacion iniciada: Perfil", Toast.LENGTH_LONG).show();
+
         fotoUsuario = findViewById(R.id.fotoUsuario);
         cambiarFoto = findViewById(R.id.editarPerfil);
-
         cambiarFoto.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+
                 if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
                     if(ActivityCompat.checkSelfPermission(Perfil.this, Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED){
                         openGallery();
@@ -58,8 +66,22 @@ public class Perfil extends AppCompatActivity {
         });
         //Menu Contextual
         //TODO: En un futuro colocar un toque largo (Idea en las imagenes de el grid)
-        //bibliografia = (TextView)findViewById(R.id.bibliografia);
-        //registerForContextMenu(bibliografia);// Registar un toque largo
+        bibliografia = (TextView)findViewById(R.id.tvBibliografia);
+        registerForContextMenu(bibliografia);// Registar un toque largo
+
+
+        //Para añadir el gridView con las imagenes
+        gridView = (GridView)findViewById(R.id.grid_view);
+        gridView.setAdapter(new ImagenAdapter(this));
+        //Para ampliar las fotos del gridView
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent enviarImagenFull = new Intent(getApplicationContext(),Imagen_Grid_Full.class);
+                enviarImagenFull.putExtra("id", position);
+                startActivity(enviarImagenFull);
+            }
+        });
     }
 
     @Override

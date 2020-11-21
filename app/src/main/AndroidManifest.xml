@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.refind">
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -17,7 +18,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Imagen_Grid_Full"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Activity_Anunciante"
+            android:label="@string/title_activity__anunciante">
+
+
+        </activity>
+        <activity android:name=".Imagen_Grid_Full" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,18 +37,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_key" />
-
-        <activity
-            android:name=".perfinAnunciante"
-            android:label="@string/title_activity_perfin_anunciante">
-
-
-        </activity>
-        <activity android:name=".Perfil"></activity>
+        <activity android:name=".Perfil" />
         <activity android:name=".Login" />
         <activity android:name=".Registro" />
         <activity android:name=".MainActivity" />

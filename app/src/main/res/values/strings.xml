@@ -3,7 +3,6 @@
     <string name="title_activity_perfin_anunciante">Map</string>
 
 
-
     <string name="bibliografia">Bibliografia</string>
     <string name="fotoPrueba">fotoPrueba</string>
     <string name="tituloPrueba">titulo Prueba</string>
@@ -62,4 +61,5 @@
     <string name="TituloEjemplo">Titulo Ejemplo</string>
     <string name="descripcionEjemplo">Descripcion Ejemplo</string>
     <string name="statusTextView">Activo</string>
+    <string name="title_activity__anunciante">Map</string>
 </resources>

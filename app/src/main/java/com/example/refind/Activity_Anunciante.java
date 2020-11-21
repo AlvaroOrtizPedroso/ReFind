@@ -11,24 +11,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class perfinAnunciante extends FragmentActivity implements OnMapReadyCallback {
-    /**
-     *          Apuntes
-     *    En esta Activity creare y mapeare los datos de cada servicio (Se usara la misma activity pero cambiando los datos)
-     *    En el metodo onMapReady esta mapeado un ejemplo
-     *    Videos para seguir con el mapa
-     *      https://www.youtube.com/watch?v=YNM_-cR9QKQ&t=354s
-     *      https://www.youtube.com/watch?v=3-84hvpb_zA (El final)
-     *      Para las coordenadas igual uso un metodo creado para el proyecto de DAW
-     *
-     */
+public class Activity_Anunciante extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_perfin_anunciante);
+        setContentView(R.layout.activity__anunciante);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -47,7 +37,14 @@ public class perfinAnunciante extends FragmentActivity implements OnMapReadyCall
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        LatLng Ataulfo = new LatLng(43.3792172, -3.2171374);
+
+        // Add a marker in Sydney and move the camera
+        /*LatLng sydney = new LatLng(-34, 151);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));*/
+
+
+        LatLng Ataulfo = new LatLng(43.3792481, -3.2193657);
         mMap.addMarker(new MarkerOptions().position(Ataulfo).title("IES Ataulfo Argenta"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Ataulfo));
     }

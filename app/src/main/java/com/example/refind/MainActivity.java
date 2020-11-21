@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             Intent main_C_Menu = new Intent(this, MainActivity.class);
             startActivity(main_C_Menu);
         }else if(id == R.id.menuAnunciante){
-            Intent main_C_Menu = new Intent(this, perfinAnunciante.class);
+            Intent main_C_Menu = new Intent(this, Activity_Anunciante.class);
             startActivity(main_C_Menu);
         }else if(id == R.id.menuPerfil){
             Intent main_C_Menu = new Intent(this, Perfil.class);

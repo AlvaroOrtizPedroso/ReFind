@@ -5,8 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Imagen_Grid_Full">
+
     <ImageView
+        android:id="@+id/imagenView_grid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/imagenView_grid"/>
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

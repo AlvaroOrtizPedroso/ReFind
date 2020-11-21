@@ -6,8 +6,8 @@
         android:id="@+id/menuPrincipal"
         android:title="@string/menuPrincipal" />
     <item
-        android:id="@+id/menuRegistro"
-        android:title="@string/menuRegistro" />
+        android:id="@+id/menuAnunciante"
+        android:title="@string/menuAnunciante" />
     <item
         android:id="@+id/menuPerfil"
         android:title="@string/menuPerfil" />

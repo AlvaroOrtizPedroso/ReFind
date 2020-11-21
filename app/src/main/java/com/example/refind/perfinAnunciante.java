@@ -22,6 +22,7 @@ public class perfinAnunciante extends FragmentActivity implements OnMapReadyCall
      *      Para las coordenadas igual uso un metodo creado para el proyecto de DAW
      *
      */
+
     private GoogleMap mMap;
 
     @Override

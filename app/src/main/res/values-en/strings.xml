@@ -4,63 +4,63 @@
     <string name="title_activity_perfin_anunciante">Map</string>
 
 
-    <string name="bibliografia">Bibliografia</string>
-    <string name="fotoPrueba">fotoPrueba</string>
-    <string name="tituloPrueba">titulo Prueba</string>
-    <string name="descripcionPrueba">descripcion Prueba</string>
+    <string name="bibliografia">Bibliography</string>
+    <string name="fotoPrueba">photo test</string>
+    <string name="tituloPrueba">title Test</string>
+    <string name="descripcionPrueba">Description Test</string>
 
 
     <!-- Strings de: Activity : PERFIL -->
     <string name="nombreUsuario">Ej_Alvaro</string>
-    <string name="desFotoUsuario">Foto del usuario</string>
-    <string name="editarPerfil">Editar perfil</string>
-    <string name="tvSeguidores">Seguidores</string>
-    <string name="tvSiguiendo">Siguiendo</string>
-    <string name="tvComentario">Comentarios</string>
+    <string name="desFotoUsuario">User photo</string>
+    <string name="editarPerfil">Edit profile</string>
+    <string name="tvSeguidores">Followers</string>
+    <string name="tvSiguiendo">Following</string>
+    <string name="tvComentario">Comments</string>
     <string name="tvNSeguidores">0</string>
     <string name="tvNSiguiendo">0</string>
     <string name="tvNComentario">0</string>
-    <string name="tvLinea">Bibliografia de ejemplo, no se que poner</string>
+    <string name="tvLinea">Example bibliography, I don\'t know what to put</string>
 
     <!-- Strings de: Activity : REGISTRO -->
-    <string name="logo_Registro">Logo de Refind</string>
-    <string name="emailRegistro">Correo electronico </string>
-    <string name="nombreRegistro">Nombre</string>
-    <string name="apellidoRegistro">Apellido</string>
-    <string name="passRegistro">Contraseña</string>
-    <string name="iniciarSesionRegistro">Iniciar Sesion</string>
-    <string name="registrarRegistro">Registrarse</string>
+    <string name="logo_Registro">Refind Logo</string>
+    <string name="emailRegistro">Email</string>
+    <string name="nombreRegistro">Name</string>
+    <string name="apellidoRegistro">Surname</string>
+    <string name="passRegistro">Password</string>
+    <string name="iniciarSesionRegistro">Login</string>
+    <string name="registrarRegistro">Registry</string>
 
     <!-- Strings de: Activity : PERFIL ANUNCIANTE -->
     <string name="nombre_anuncio">IES ATAULFO ARGENTA</string>
     <string name="descripcion_anuncio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis sagittis nibh. Ut euismod, dolor et bibendum tincidunt, orci justo efficitur dolor, non rhoncus nibh massa vitae lectus</string>
 
     <!-- Strings de: Activity : LOGIN -->
-    <string name="descripcionLogo">Logo de ReFind</string>
-    <string name="email_login">Correo electronico </string>
-    <string name="passLogin">Contraseña</string>
-    <string name="iniciarSesionLogin">Iniciar Sesion</string>
-    <string name="mensajeParaRegistro">¿Aun no tienes una cuenta?</string>
-    <string name="btnRegistro">Registro</string>
+    <string name="descripcionLogo">ReFind Logo</string>
+    <string name="email_login">Email</string>
+    <string name="passLogin">Password</string>
+    <string name="iniciarSesionLogin">Login</string>
+    <string name="mensajeParaRegistro">Do not you have an account yet?</string>
+    <string name="btnRegistro">Registry</string>
 
 
     <!-- Menu contextual AL DEJAR PULSADO-->
-    <string name="action_copiar">Copiar bibliografia</string>
-    <string name="action_editar">Editar bibliografia</string>
-    <string name="action_defecto">Bibliografia por defecto</string>
+    <string name="action_copiar">Copy bibliography</string>
+    <string name="action_editar">Edit bibliography</string>
+    <string name="action_defecto">bibliography default</string>
 
     <!-- Strings de: Menu : OVERFLOW -->
-    <string name="menuPrincipal">Principal</string>
-    <string name="menuAnunciante">Anuncio Ejemplo</string>
-    <string name="menuPerfil">Tu perfil</string>
+    <string name="menuPrincipal">Main</string>
+    <string name="menuAnunciante">Announcement Example</string>
+    <string name="menuPerfil">Your profile</string>
 
     <!-- Strings de: Activity : MAIN -->
-    <string name="lista">Lista</string>
+    <string name="lista">List</string>
 
     <!-- Strings de: Activity : MAIN - list_element -->
-    <string name="icoImageView">Icono de imagen</string>
-    <string name="TituloEjemplo">Titulo Ejemplo</string>
-    <string name="descripcionEjemplo">Descripcion Ejemplo</string>
-    <string name="statusTextView">Activo</string>
+    <string name="icoImageView">Image icon</string>
+    <string name="TituloEjemplo">Title Example</string>
+    <string name="descripcionEjemplo">Description Example</string>
+    <string name="statusTextView">Active</string>
     <string name="title_activity__anunciante">Map</string>
 </resources>

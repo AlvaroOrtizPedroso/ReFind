@@ -86,7 +86,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginEnd="64dp"
                 android:gravity="center"
-                android:text="@string/tvSeguidores"
+                android:text="@string/tvSiguiendo"
                 android:textSize="16sp" />
 
             <TextView

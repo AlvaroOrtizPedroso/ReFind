@@ -22,8 +22,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
         Toast.makeText(this, "Aplicacion iniciada: Main", Toast.LENGTH_LONG).show();
         init();
     }
@@ -56,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             Intent main_C_Menu = new Intent(this, MainActivity.class);
             startActivity(main_C_Menu);
         }else if(id == R.id.menuAnunciante){
-            Intent main_C_Menu = new Intent(this, Activity_Anunciante.class);
+            Intent main_C_Menu = new Intent(this, ActivityAnunciante.class);
             startActivity(main_C_Menu);
         }else if(id == R.id.menuPerfil){
             Intent main_C_Menu = new Intent(this, Perfil.class);
@@ -77,10 +75,17 @@ public class MainActivity extends AppCompatActivity {
         elements.add(new ListElement("#775447", "Pedro","Espanita", "Activo"));
         elements.add(new ListElement("#775447", "Pedro","Espanita", "Activo"));
 
+
         ListAdapter listAdapter = new ListAdapter(elements, this);
         RecyclerView recyclerView = findViewById(R.id.listRecyclerView);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(listAdapter);
+        //recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        //recyclerView.setAdapter(listAdapter);
+
+
+
+
     }
 }

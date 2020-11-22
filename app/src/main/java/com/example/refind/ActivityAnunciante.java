@@ -11,14 +11,14 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Activity_Anunciante extends FragmentActivity implements OnMapReadyCallback {
+public class ActivityAnunciante extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity__anunciante);
+        setContentView(R.layout.activity_anunciante);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
@@ -39,13 +39,8 @@ public class Activity_Anunciante extends FragmentActivity implements OnMapReadyC
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        /*LatLng sydney = new LatLng(-34, 151);
+        LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));*/
-
-
-        LatLng Ataulfo = new LatLng(43.3792481, -3.2193657);
-        mMap.addMarker(new MarkerOptions().position(Ataulfo).title("IES Ataulfo Argenta"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(Ataulfo));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }

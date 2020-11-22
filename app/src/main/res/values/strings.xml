@@ -62,4 +62,5 @@
     <string name="descripcionEjemplo">Descripcion Ejemplo</string>
     <string name="statusTextView">Activo</string>
     <string name="title_activity__anunciante">Map</string>
+    <string name="title_activity_anunciante">Map</string>
 </resources>

@@ -41,10 +41,6 @@ public class Perfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perfil);
-
-
-
-
         Toast.makeText(this, "Aplicacion iniciada: Perfil", Toast.LENGTH_LONG).show();
 
         fotoUsuario = findViewById(R.id.fotoUsuario);
